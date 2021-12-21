@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Form </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      
+        <style>
+            .text{
+    padding-top: 100px;
+}
+.text p{
+    line-height:0.5;
+}
+*{
+    color: #1a39b4;
+}
+label, .info{
+    position: relative;
+    top: -20px;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1a39b4;
+    border-radius: 0px;
+    padding-bottom: 0px !important;
+}
+#info{
+    position: relative;
+    top: -30px !important;
+}
+.boxed{
+    box-sizing: border-box;
+    border: 1px solid  #1a39b4;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    height: 155px;
+}
+.boxedd{
+    width: 720px;
+}
+.belowboxed{
+    padding-top: 40px;
+}
+.age{
+    margin-top: -35px;
+}
+.anterior{
+    padding-top: 50px;
+}
+.nometal{
+    margin-top: -60px;
+}
+.boxed2{
+    padding-right: 50px !important;
+    padding-bottom: 50px !important;
+    height: 145px;
+    padding-left: 50px !important;
+}
+.boxed3{
+    position: relative;
+    top: 53px;
+    right: 70px;
+    box-sizing: border-box;
+    border: 1px solid  #1a39b4;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    height: 200px;  
+    width: 200px;
+}
+.pontic_img{
+    margin-top: -45px;
+}
+.text-area{
+    box-sizing: border-box;
+    border: 1px solid #1a39b4;
+    border-radius: 5px;
+    height: 120px;
+}
+div.invalid-feedback{
+    position: absolute;
+    top: -2px;
+}
+.container{
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+textarea{
+    border: 1px solid  #1a39b4 !important;
+    height: 100px !important;
+    display:inline-flex'
+}
+
+/*
+#gold_crown, #high_gold{
+    display: none;
+}
+*/
+
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>a
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+ 
+            <div class="contain">
+                
+        <div class="form">
+            <div class="container">
+                <div class="row">
+                    <div class="brand-logo col-md-6">
+                        <img src="images/HTDC Logo.png" width="600px" height="300px" style="margin-left: -100px;">
+                    </div>
+                    <div class="text text-right col-md-6">
+                        <p> <b> Serving the Dental Industry Since 1977 </b> </p>
+                        <p> 4400 Technology Drive, Fremont, CA 94538 </p>
+                        <p> 510-791-1661 </p>
+                        <p> info@hitecdental.com </p>
+                        <p> <b> Full Service Dental Laboratory </b> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <form id="form" class="nameform needs-validation" data-toggle="validator">
+               <!-- <form id="form" class="nameform needs-validation" novalidate method="post" acion="contact-form-process.php"> -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            
+                            <input class="form-control doctor" type="text" name="doctor" placeholder="" required><br>
+                            <label for="Doctor" class="label"> Doctor </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control date" type="text" name="date" size="55" placeholder="" required><br>
+                            <label for="Date" class="label">Order Date</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control patient" type="text" name="patient" size="52" value="" placeholder=""><br>
+                            <label for="Patient" class="label">Patient</label>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    
+                                    <input type="radio" class="info" id="age" name="gender" value="Male" class="">
+                                    <label for="Male" class="check5pm">Male</label>
+                                    <input type="radio" class="info" id="age" name="gender" value="Female">
+                                    <label for="Female" class="check5pm">Female</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="age">Age</label> 
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="form-group">
+                                                <input class="form-control age" type="text" name="age" value="" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="form-control due-date" type="text" name="dueDate" size="55" value="" placeholder="" required><br>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <label for="dueDate" class="label"><b>DUE DATE</b></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input info" id="invalidCheck" name="check5pm" value="By 5:00 PM">
+                                        <label for="timeinfo" class="info"> By 5:00 PM</label>
+                                        <!--
+                                        <div class="invalid-feedback">
+                                            Please check this box
+                                        </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <small id="info"> Please do not schedule appointments on delivery date. </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div  class="row">
+                                <div class="col-md-9">
+                                    <div class="boxed text-center">
+                                        <p class="text-center" style="padding-bottom: 15px;"> Type of Restoration 1</p>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <input type="radio" class="info form-check-input" id="Lava" name="TOP" value="LAVA" onclick="dissap(2)" required>
+                                                    <label for="Lava" class="check5pm">LAVA</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <input type="radio" class="info form-check-input" id="PFM" name="TOP" value="PFM" onclick="dissap(3)">
+                                                    <label for="PFM" class="check5pm">PFM</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <input type="radio" class="info form-check-input" id="eMax" name="TOP" value="eMax" onclick="dissap(0)">
+                                                    <label for="eMax" class="check5pm">eMax </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="radio" class="info form-check-input" id="BruxZir" name="TOP" value="Zirconia (HIZ360)" onclick="dissap(1)">
+                                                    <label for="BruxZir (HIZ360)" class="check5pm">Zirconia (HIZ360)</label>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input info" id="invalidCheck" name="Implant" value="Implant">
+                                                    <label for="timeinfo" class="info"> Implant </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12" id="top2">
+                                                <p style="padding-bottom: 10px; margin-top: -30px;" id="top2">Type Of Restoration 2 </p>
+                                            </div>
+                                            <div class="col-md-2" id="top5">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input info" id="FMC" name="FMC" value="FMC">
+                                                    <label for="fmc" class="fmc"> FMC </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div id="top3">
+                                                    <div class="form-group" id="gold_crown">
+                                                        <input type="radio" class="info form-check-input" id="golld_crown" name="TOP" value="Gold Crown (Economy 2%)" onclick="">
+                                                        <label for="Gold Crown (Economy 2%)" class="check5pm">Gold Crown (Economy 2%)</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3"  id="high_gold">
+                                                <div id="top4">
+                                                    <div class="form-group">
+                                                        <input type="radio" class="info form-check-input" id="hiigh_gold" name="TOP" value="High Gold" onclick="">
+                                                        <label for="High Gold" class="check5pm">High Gold</label>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>       
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="boxed text-center">
+                                        <p class="text-center" style="padding-bottom: 15px;"> Repair / Remake </p>
+                                            <div class="form-group">
+                                                <input type="radio" class="info form-check-input" id="Lava" name="RR" value="Repair">
+                                                <label for="Lava" class="check5pm">Repair</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="radio" class="info form-check-input" id="PFM" name="RR" value="Remake">
+                                                <label for="PFM" class="check5pm">Remake</label>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 belowboxed" >
+                                    <div class="row" id="metalss">
+                                        <div class="col-md-2">
+                                            <p class="info"> PFM Metal</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-check form-group">
+                                                <input type="radio" class="info form-check-input" id="Non Precious" name="metal" value="Non Precious">
+                                                <label for="Non Precious" class="check5pm">Non Precious</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <input type="radio" class="info form-check-input" id="Semi Precious" name="metal" value="Semi Precious">
+                                                    <label for="Semi Precious" class="check5pm">Semi Precious</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="radio" class="info form-check-input" id="Precious Yellow Gold" name="metal" value="Precious Yellow Gold">
+                                            <label for="Precious Yellow Gold" class="check5pm">Precious Yellow Gold</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="radio" class="info form-check-input" id="Precious White Gold" name="metal" value="Precious White Gold">
+                                            <label for="Precious White Gold" class="check5pm">Precious White Gold</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                    </div>
+
+                    <div class="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="boxed text-center">
+                                    <p class="text-center tn"> Tooth Number(s)</p>
+                                    <input class="form-control tnumber" type="text" name="toothnumber" value="" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="boxed text-center">
+                                    <p class="text-center"> <b>SHADE</b> </p>
+                                   <input class="form-control shade" type="text" name="shade" size="12" value="" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="boxed text-center">
+                                    <p class="text-center" style="padding-bottom: 15px;"> Occlusal Stain </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input type="radio" class="info form-check-input" id="None" name="OS" value="None">
+                                            <label for="None" class="">None</label>
+                                            <br>    
+                                            <input type="radio" class="info form-check-input" id="Light" name="OS" value="Light">
+                                            <label for="Light" class="">Light</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="radio" class="info form-check-input" id="Medium" value="Medium" name="OS" >
+                                            <label for="Medium" class="">Medium</label>
+                                            <br>    
+                                            <input type="radio" class="info form-check-input" id="Dark" name="OS" value="Dark">
+                                            <label for="Dark" class="">Dark</label>
+                                        </div>
+                                     </div>   
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <div class="">
+                        <div class="row anterior">
+                            <div class="col-md-2">
+                                <p class="" style="text-decoration: underline;"> Anterior </p>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input info" id="Light" name="Anterior" value="No Metal Showing" >
+                                <img class="nometal" src="images/Anterior No metal showing.png" width="40px" height="40px">
+                                <label for="No_metal_showing" class="">No Metal<br> Showing</label>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="radio" class="form-check-input info" id="lband" name="Anterior" value="Lingual Band">
+                                <img class="nometal" src="images/Anterior Lingual Band.png" width="40px" height="40px">
+                                <label for="lband" class="">Lingual <br> Band</label>   
+                            </div>
+                            <div class="col-md-3">
+                                <input type="radio" class="form-check-input info" id="mlmc" name="Anterior" value="Metal Lingual/Metal Contact">
+                                <img class="nometal" src="images/Anterior Metal Lingual_Metal Contact.png" width="40px" height="40px">
+                                <label for="mlmc" class="">Metal Lingual/ <br> Metal Contact</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="radio" class="form-check-input info" id="mlpc" name="Anterior" value="Metal Lingual/Porc. Contact">
+                                <img class="nometal" src="images/Anterior Metal Lingual Porc Contact.png" width="40px" height="40px">
+                                <label for="mlpc" class="">Metal Lingual/ <br>Porc. Contact</label>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <hr>
+                    <br>
+                    <div class="">
+                        <div class="row ">
+                            <div class="col-md-10 ">
+                                <div class="row posterior">
+                                    <div class="col-md-2">
+                                        <p class="" style="text-decoration: underline;"> Posterior </p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="radio"class="form-check-input info" id="lband" name="Posterior" value="Lingual Band">
+                                        <img class="nometal" src="images/Posterior lingual band.png" width="50px" height="50px">
+                                        <label for="lband" class="">Lingual <br> Band</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" class="form-check-input info" id="moebc" name="Posterior" value="Metal Occlusal excluding buccal cusp">
+                                        <img class="nometal" src="images/Posterior metal occlusal excluding buccal cusp.png" width="40px" height="40px">
+                                        <label for="moebc" class="post">Metal occlusal <br> excluding buccal cusp</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" class="form-check-input info" id="moibc" name="Posterior" value="Metal Occlusal including buccal cusp">
+                                        <img class="nometal" src="images/posterior metal occlusal including buccal cusp.png" width="40px" height="40px">
+                                        <label for="moibc" class="post">Metal occlusal <br> including  buccal cusp</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="text-center col-md-12" style="padding-bottom: 20px;">
+                                        <img src="images/Teeth-Lab Slip.png" class="teethlab">
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div class="boxed boxed2 posterior1">
+                                            <div class="">
+                                                <p class="text-center" style="padding-bottom: 10px;"> Margins </p>                                                <div class="form-grou">
+                                                    <input type="radio" class="form-check-input info" id="metals" name="Margins" value="Metals">
+                                                    <label for="metals" class="">Metals</label><br>
+                                                </div>
+                                                <div class="form-grop">
+                                                    <input type="radio" class="form-check-input info" id="snm" name="Margins" value="Show No Metals">
+                                                     <label for="snm" class="check5pm">Show no Metals</label><br>
+                                                </div>
+                                                <div class="form-grup">
+                                                    <input type="radio" class="form-check-input info" id="Porcelain" name="Margins" value="Porcelain">
+                                                    <label for="Porcelain" class="check5pm">Porcelain</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="col-md-5">
+                                    <div class="boxed boxed2">
+                                        <p class=" text-center" style="padding-bottom: 10px;"> Occlusal </p>
+                                        <input type="radio" class="form-check-input info" id="io" name="Occlusal" value="In Occlusal">
+                                        <label for="io" class="check5pm">In Occlusal</label>   <br>
+                                        <input type="radio" class="form-check-input info" id="ooo" name="Occlusal" value="Out of Occlusal">
+                                        <label for="ooo" class="check5pm">Out Of Occlusal</label>
+                                        <br>
+                                        <input type="radio" class="form-check-input info" id="Foil-Relief" name="Occlusal" value="Foil Relief">
+                                        <label for="Foil-Relief" class="check5pm">Foil Relief</label>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pontic_des">
+                            <div class="boxed3">
+                                <p class=" text-center" style="padding-bottom: 20px;"> Pontic Design </p>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="images/Hygienic Pontic Design.png" width="30px" height="30px" class="pontic_img">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="radio" id="io"  class="form-check-input info" name="PD" value="Hygienic">
+                                        <label for="io" class="check5pm">Hygienic</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/Modified Ridge Pontic Design.png" width="30px" height="30px" class="pontic_img">       
+                                    </div>                               
+                                    <div class="col-md-9">
+                                        <input type="radio" id="io"  class="form-check-input info" name="PD" value="Modified Ridge"> 
+                                        <label for="io" class="check5pm"> Modified Ridge </label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/Bullet Pontic Design.png" width="30px" height="30px" class="pontic_img">  
+                                    </div>                             
+                                    <div class="col-md-9">
+                                        <input type="radio" id="io" class="form-check-input info" name="PD" value="Bullet">
+                                        <label for="io" class="check5pm">Bullet</label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="images/Ridge Lap Pontic Design.png" width="30px" height="30px" class="pontic_img">
+                                    </div>                             
+                                    <div class="col-md-9">
+                                        <input type="radio" id="io" class="form-check-input info" name="PD" value="Riddge Lap">
+                                        <label for="io" class="check5pm">Riddge Lap</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="">
+                    <div class="row belowboxed">
+                        <div class="col-md-3 ">
+                            <p class="info"> Special</p>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" class="form-check-input info" id="Call" name="special" value="Call">
+                            <label for="Call" class="check5pm">Call</label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" class="form-check-input info" id="rfdt" name="special" value="Return for Die Trim">
+                            <label for="rfdt" class="check5pm"> Return for Die Trim </label>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" class="form-check-input info" id="mfti" name="special" value="Metal Frame Tyr-In">
+                            <label for="mfti" class="check5pm">Metal Frame Try-In</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea class="form-control" name="text" require> </textarea>
+                        </div>
+
+                        <div class="col-md-6 belowboxed">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="Signature" class="info"> Signature:</label>                                </div>
+                                <div class="col-md-10">
+                                    <input type="signature" class="form-control age" name="signature" id="signature" value="" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 belowboxed">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="licence_no" class="sig"> D.D.S License No:</label>
+                                </div>
+                                <div class="col-md-8">
+                                        <input type="text" class="form-control age" name="licenceNo" id="licence_no" value="">
+                                </div>
+                                </div>
+                            </div>
+
+                        <div class="col-md-12">   
+                        <p><b>TERMS:</b>All accounts are payable within 25 days of statement date. Delinquent accounts will be 
+                            subject to COD status and a late charge of 3% compound interest per month on the unpaid 
+                            balance
+                        </p>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+                <div class="container">
+                    <div class="btncenter text-center">
+                        <button class="btn btn-primary"> Submit </button>
+                    </div>
+                </div> 
+          </form>
+
+            </div>       
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
+             function dissap(x) {
+                 if (x==0) {
+                    document.getElementById("metalss").style.display = "none";
+                    document.querySelector(".anterior").style.display = "none";
+                    document.querySelector(".posterior").style.display = "none";
+                    document.querySelector(".posterior1").style.display = "none";
+                    document.querySelector("#top2").style.visibility = "hidden";
+                    document.querySelector("#top3").style.visibility = "hidden";
+                    document.querySelector("#top4").style.visibility = "hidden";
+                    document.querySelector("#top5").style.visibility = "hidden";
+                 }
+                 else if (x==1) {
+                     document.getElementById("metalss").style.display = "none";
+                     document.querySelector(".anterior").style.display = "none";
+                     document.querySelector(".posterior").style.display = "none";
+                     document.querySelector(".posterior1").style.display = "none";
+                     document.querySelector("#top2").style.visibility = "hidden";
+                     document.querySelector("#top3").style.visibility = "hidden";
+                     document.querySelector("#top4").style.visibility = "hidden";
+                     document.querySelector("#top5").style.visibility = "hidden";
+
+ 
+                 }
+                 else{
+                    document.getElementById("metalss").style.display = "flex";
+                    document.querySelector(".anterior").style.display = "flex";
+                    document.querySelector(".posterior").style.display = "flex";
+                    document.querySelector(".posterior1").style.display = "block";
+                    document.querySelector("#top2").style.visibility = "visible";
+                    document.querySelector("#top3").style.visibility = "visible";
+                    document.querySelector("#top4").style.visibility = "visible";
+                    document.querySelector("#top").style.visibility = "visible";
+
+
+                 }
+             }
+             
+        </script>
+        <script>
+            var golld_crown = document.getElementById('golld_crown').disabled = true;
+            var hiigh_gold = document.getElementById('hiigh_gold').disabled = true;
+
+
+
+            document.getElementById('FMC').onchange = function(){
+            if(this.checked) {
+                console.log('true');
+                document.querySelector('#golld_crown').disabled = false,
+                document.querySelector('#hiigh_gold').disabled = false;
+            }
+            else {
+                document.getElementById('golld_crown').disabled = true,
+                document.getElementById('hiigh_gold').disabled = true;
+            }
+        };
+        /*
+            if (document.getElementById('FMC').checked){
+                console.log('true');
+                document.querySelector('#golld_crown').disabled = false,
+                document.querySelector('#hiigh_gold').disabled = false;
+            } else{
+                document.getElementById('golld_crown').disabled = true,
+                document.getElementById('hiigh_gold').disabled = true;
+            }
+            */
+
+        </script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_3AXU2rXzSyWHzFKzlUzII");
+            })();
+        </script>
+        <script>
+            $('form').on('submit', function(event) {
+                event.preventDefault(); // prevent reload
+                console.log('Sent')
+                var formData = new FormData(this);
+                formData.append('service_id', 'hitec_contact_service');
+                formData.append('template_id', 'template_aiz1vw9');
+                formData.append('user_id', 'user_3AXU2rXzSyWHzFKzlUzII');
+    
+                $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+                    type: 'POST',
+                    data: formData,
+                    contentType: false, // auto-detection
+                    processData: false // no need to parse formData to string
+                }).done(function() {
+                    alert('Your mail is sent!');
+                }).fail(function(error) {
+                    alert('Oops... ' + JSON.stringify(error));
+                });
+            });
+        </script>
+       
+         <script>
+      
+            // On clicking submit do following
+            $("input[type=submit]").click(function() {
+                  
+                var atLeastOneChecked = false;
+                $("input[type=radio]").each(function() {
+                  
+                    // If radio button not checked
+                    // display alert message 
+                    if ($(this).attr("checked") != "checked") {
+                      
+                        // Alert message by displaying
+                        // error message
+                        $("#msg").html(
+            "<span class='alert alert-danger' id='error'>"
+            + "Please Choose atleast one</span>");
+                    }
+                });
+            });
+        </script>
+        <script>
+            
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
+
+        </script>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('input:checkbox').click(function() {
+                    $('input:checkbox').not(this).prop('checked', false);
+                });
+            });
+            </script>
+    
+        <script src="" async defer></script>
+    </body>
+    </html>

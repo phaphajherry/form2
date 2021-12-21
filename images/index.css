@@ -1,0 +1,148 @@
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.text{
+    padding-top: 100px;
+}
+.text p{
+    line-height:0.5;
+}
+*{
+    color: #1a39b4;
+}
+
+input, select {
+padding: 5px;
+margin-bottom: 30px;
+background: transparent;
+border: none;
+border-bottom: 1px solid #1a39b4;
+ }
+ img{
+     position: absolute;
+     right: 0px;
+ }
+ .form_fields{
+     padding-top: 50px;
+ }
+ .checkbox5pm{
+     padding-left: 270px;
+     position: relative;
+     top: -50px;
+ }
+ .belowcheck{
+    margin-top: -80px;
+ }
+label{
+    position: relative;
+    top: -50px;
+}
+.check5pm{
+    position: relative;
+    top: 0px !important;
+}
+.section3 label, .section4 label{
+    margin-left: 0px;
+    padding-right: 40px;
+}
+.age_gender{
+    margin-top: -65px;
+}
+.age{
+    width: ;
+}
+.col-md-6{
+    padding-bottom: 0px;
+}
+
+.section3{
+    box-sizing: border-box;
+    border: 1px solid  #1a39b4;
+    padding: 20px;
+}
+.section6{
+    border: 1px solid  #1a39b4;
+    padding: 8px;
+}
+.section6 label{
+        position: relative;
+        top: 0px;
+}
+.nometal{
+    position: relative;
+}
+.selectsect label{
+    position: relative;
+    top: 13px;
+    padding-right: 30px;
+}
+.selectsect{
+    padding-top: 40px;
+}
+.teethlab{
+    position: relative;
+    left: 30px;
+    top: -80px;
+}
+.post{
+    position: relative;
+    top: 40px !important;
+}
+.selectsectpost{
+    position: relative;
+    top: -80px !important;
+}
+.section7{
+    border: 1px solid  #1a39b4;
+    padding: 8px;
+    padding-left: 50px;
+}
+.section7r{
+    margin-top: -50px;
+}
+.pontic_img{
+    position: relative;
+    left: 0px;
+}
+.section8{
+    border: 1px solid  #1a39b4;
+    padding: 8px;
+    padding-left: 20px;
+}
+p{
+    font-weight: bold;
+}.belowcheck{
+    font-weight: normal;
+}
+.sig{
+    position: relative;
+    top: 10px;
+}
+.text-area{
+    box-sizing: border-box;
+    border: 1px solid #1a39b4;
+    border-radius: 5px;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px1;
+}
+.anterior{
+    position: relative;
+    top: -20px !important; 
+    padding-top: 20px;
+}
+.btncenter{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1a39b4;
+    border-radius: 0px;
+    padding-bottom: 0px !important;
+}
+div.form-group{
+  padding-bottom: 100px !important;
+}
